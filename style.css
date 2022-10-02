@@ -1,0 +1,327 @@
+:root{
+    --color-primary: #191d2b;
+    --color-secondary: #27AE60;
+    --color-white: #FFFFFF;
+    --color-black: #000;
+    --color-grey: #f8f8f8;
+    --color-grey1: #dbe1e8;
+    --color-grey2: #b2becd;
+    --color-grey3: #6c7983;
+    --color-grey4: #454e56;
+    --color-grey5: #2a2e35;
+    --color-grey6: #12181b;
+}
+::-webkit-scrollbar{
+    width: 7.5px;
+    height: 7.5px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #27AE60;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--color-grey5);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 1.1rem;
+}
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+}
+.left-header{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.h-shape{
+    transition: all .4s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    clip-path: polygon(0 0 , 46% 0, 79% 100%, 0% 100%);
+
+}
+.image{
+    background-clip: border-box;
+    margin-top: 7.5vh;
+    border-radius: var(14px);
+    height: 80%;
+    width: 20vw;
+    margin-left: 3rem;
+    background-color: var(--color-black);
+    transition: all .4s ease-in-out;
+}
+img{
+    width: 20vw;
+    height: 80vh;
+    object-fit: cover;
+    transition: all .4s ease-in-out;
+    filter: grayscale(100%);
+}
+img:hover{
+    filter: grayscale(0%);
+    width: 22.5vw;
+    height: 82vh;
+    transition: all .4s ease-in-out;
+}
+.right-header{
+    font-size: 3vh;
+    cursor: default;
+    display: flex;
+    margin-left: 18px;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 16rem;
+}
+.name{
+    font-size: 2rem;
+}
+.name-span{
+    color: var(--color-secondary);
+}
+.controls{
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    transition: all .9s ease-in-out;
+}
+
+.control{
+    padding: 1rem;
+    cursor: pointer;
+    background-color: rgb(69, 78, 86, .8);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0;
+    box-shadow: var(--box-shadow);
+}
+.control-icon{
+    width: 30px;
+    height: 20px;
+}
+.control-icon:hover{
+    width: 30px;
+    height: 20px;
+}
+.control:hover{
+    background-color: rgb(39, 174, 96, .75);
+    transition: all .4s ease-in-out;
+}
+a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+.about-me{
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    color: var(--color-secondary);
+}
+#about-column{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cards-whole{
+    width: 42.5vw;;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.h-ones{
+    margin-bottom: 0;
+}
+.cards{
+    cursor: default;
+    font-size: 2vh;
+    padding-bottom: 20px;
+    margin: 5px 5px 5px 5px;
+    background-color: #191d2b;
+    border: solid #293047 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.download-cv{
+    border: solid 1px white;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.download-cv:hover{
+    color: white;
+    background-color: #27AE60;
+    transition: all .3s ease-out;
+}
+.cards:hover{
+    color: var(--color-secondary);
+    transform: translateX(100) translateY(100);
+    background-color: #23283b;
+    transition: all .5s ease-in-out;
+}
+.skills{
+    cursor: default;
+    width: 100vw;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.those-skills{
+    padding-left: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+ul{
+    margin-bottom: 0px;
+}
+li{
+    margin-top: 0;
+    cursor: default;
+}
+#one-paragraph{
+    margin-bottom: 0px;
+}
+
+.skill-cards{
+    cursor: default;
+    margin-bottom: 0;
+    padding-left: 15px;
+    margin: 5px 5px 5px 5px;
+    background-color: #1b2135;
+    border: solid 1px #202536;
+    border-radius: 10px;
+}
+.skill-cards:hover{
+    color: var(--color-secondary);
+    background-color: #23283b;
+    transition: all .4s ease-in-out;
+}
+.portfolio-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.portfolio-cards{
+    filter: grayscale(0.5);
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+    margin: 2.5px 2.5px 20px 2.5px;
+    border: solid 1px #202536;
+    border-radius: 10px;
+}
+.portfolio-cards:hover{
+    filter: grayscale(0);
+    transition: all .25s ease-in-out;
+}
+#project-image{
+    filter: grayscale(0);
+    position: absolute;
+    border-radius: 10px;
+    height: 30vh;
+    width: 30vw;
+    margin-bottom: 0;
+    z-index: -1;
+}
+
+#project-name{
+    padding-left: 10px;
+    margin-top: 0;
+}
+a:hover{
+    color: gold;
+    transition: all .4s ease-in-out;
+}
+
+.h1-portfolio{
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#more-portfolio{
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#my-git{
+    color: var(--color-secondary);
+}
+#years{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9vh;
+}
+.info{
+    cursor: default;
+    margin-left: 2.5vw;
+}
+.contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.icon-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-img{
+    margin: 5px 5px ;
+    max-width: 30px;
+    max-height: 30px;
+    object-fit: contain;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
