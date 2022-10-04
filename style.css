@@ -207,6 +207,9 @@ span{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+#info-data{
+    margin: 0 5px 20px 0;
+}
 ul{
     margin-bottom: 0px;
 }
