@@ -175,14 +175,14 @@ span:hover{
 #about-column{
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(2,  1fr);
 }
 .cards-whole{
-    width: 42.5vw;;
+    width: 42.5vw;
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .h-ones{
     margin-bottom: 0;
@@ -200,6 +200,7 @@ span:hover{
     flex-direction: column;
     align-items: center;
     position: relative;
+    height: 80px;
 }
 .download-cv{
     border: solid 1px white;
