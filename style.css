@@ -175,14 +175,14 @@ span:hover{
 #about-column{
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 .cards-whole{
     width: 42.5vw;;
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 .h-ones{
     margin-bottom: 0;
@@ -321,6 +321,7 @@ a:hover{
 .info{
     cursor: default;
     margin-left: 2.5vw;
+    margin-right: 10px;
 }
 .contact-info{
     display: flex;
