@@ -324,6 +324,9 @@ a:hover{
     margin-left: 2.5vw;
     margin-right: 10px;
 }
+.info-data{
+    margin-right: 10px;
+}
 .contact-info{
     display: flex;
     align-items: center;
