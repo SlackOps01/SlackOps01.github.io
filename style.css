@@ -123,11 +123,7 @@ img:hover{
     margin: .5rem 0;
     box-shadow: var(--box-shadow);
 }
-.control:hover{
-    animation: color-rotate 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
+
 .control-icon{
     width: 30px;
     height: 20px;
@@ -144,8 +140,9 @@ img:hover{
 a{
     text-decoration: none;
     color: var(--color-white);
+    text-decoration: none;
 }
-a:hover{
+#my-git:hover{
     animation: color-rotate 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
