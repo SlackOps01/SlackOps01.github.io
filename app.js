@@ -1,3 +1,4 @@
+quote = document.getElementById('living-life')
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
 
@@ -13,3 +14,9 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+async function getQuote(){
+    let response = await fetch(`https://n5ekou.deta.dev/api/quotes`)
+    data = await response.json()
+    quote.innerText = `${data.Quote} -${data.Author}`
+}
+getQuote()
