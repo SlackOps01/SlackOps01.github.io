@@ -17,6 +17,7 @@ main > img{
     margin-top: 40px;
     margin-bottom: 35px;
 }
+
 .error404{
     font-weight: bold;
     font-size: 35px;
@@ -54,4 +55,55 @@ a{
 }
 .socials > a >img {
     height: 30px;
+}
+.glitch{
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(54, 54, 54);
+    margin-bottom: 10px;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.7), -0.025em -0.05em 0 rgba(0, 255, 0, 0.7), 0.025em 0.05em 0 rgba(0, 0, 255, 0.7);
+    animation: glitch 750ms infinite;
+    position: relative;
+}
+.glitch .other{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.glitch .other:first-child{
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 0, 100% 30%, 0 30%);
+    transform:  translate(-0.025em, 0.0125em);
+    opacity: 0.8;
+}
+.glitch .other:last-child{
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+    transform: translate(0.025em, 0.0125em);
+    opacity: 0.8;
+}
+
+@keyframes glitch{
+    0% {
+        text-shadow: -0.05em 0 0 rgba(255, 0, 0, 0.7), -0.025em -0.05em 0 rgba(0, 255, 0, 0.7), 0.025em 0.05em 0 rgba(0, 0, 255, 0.7);
+    }
+    14% {
+        text-shadow: -0.05em 0 0 rgba(255, 0, 0, 0.7), -0.025em -0.05em 0 rgba(0, 255, 0, 0.7), 0.025em 0.05em 0 rgba(0, 0, 255, 0.7);
+    }
+    15% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.7), 0.025em 0.025em 0 rgba(0, 255, 0, 0.7), -0.05em -0.05em 0 rgba(0, 0, 255, 0.7);
+    }
+    49% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.7), 0.025em 0.025em 0 rgba(0, 255, 0, 0.7), -0.05em -0.05em 0 rgba(0, 0, 255, 0.7);
+    }
+    50% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.7), 0.05em 0 0 rgba(0, 255, 0, 0.7), 0 -0.05em 0 rgba(0, 0, 255, 0.7);
+    }
+    99% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.7), 0.05em 0 0 rgba(0, 255, 0, 0.7), 0 -0.05em 0 rgba(0, 0, 255, 0.7);
+    }
+    100% {
+        text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.7), -0.025em -0.025em 0 rgba(0, 255, 0, 0.7), -0.025em -0.05em 0 rgba(0, 0, 255, 0.7);
+    }
+
 }
