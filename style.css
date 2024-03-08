@@ -48,7 +48,7 @@ a{
     color: #4183C4;
 }
 .socials{
-    margin-top: 30px;
+    margin-top: 50px;
     width: 300px;
     display: flex;
     align-items: center;
@@ -58,14 +58,15 @@ a{
     height: 30px;
 }
 
-.secret-message{
-    margin-top: 20px;
-    color: rgb(255, 255, 255);
-    cursor: default;
-    transition: color 0.01s;
+.secret-url{
+    color: gray;
 }
-.secret-message:hover{
-    color: rgb(47, 255, 54);
+.riddle{
+    width: 80%;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: justify;
+    color: gray;
 }
 
 
