@@ -62,11 +62,13 @@ a{
     color: gray;
 }
 .riddle{
-    width: 80%;
+    width: 40%;
+    display: flex;
     margin-top: 20px;
     justify-content: center;
-    text-align: justify;
+    font-size: 12px;
     color: gray;
+    font-weight: bold;
 }
 
 
