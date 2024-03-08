@@ -42,13 +42,13 @@ span.sub-text>a{
 }
 .author{
     color: gray;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 a{
     color: #4183C4;
 }
 .socials{
-    margin-top: 30px;
+    margin-top: 15px;
     width: 300px;
     display: flex;
     align-items: center;
