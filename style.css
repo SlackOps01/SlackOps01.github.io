@@ -48,7 +48,7 @@ a{
     color: #4183C4;
 }
 .socials{
-    margin-top: 50px;
+    margin-top: 30px;
     width: 300px;
     display: flex;
     align-items: center;
@@ -62,11 +62,12 @@ a{
     color: gray;
 }
 .riddle{
-    width: 40%;
+    width: 60%;
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: center;
-    font-size: 12px;
+    align-items: center;
+    font-size: 11px;
     color: gray;
     font-weight: bold;
 }
