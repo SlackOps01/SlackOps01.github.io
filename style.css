@@ -42,13 +42,13 @@ span.sub-text>a{
 }
 .author{
     color: gray;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 a{
     color: #4183C4;
 }
 .socials{
-    margin-top: 15px;
+    margin-top: 25px;
     width: 300px;
     display: flex;
     align-items: center;
@@ -64,12 +64,13 @@ a{
 .riddle{
     width: 60%;
     display: flex;
-    margin-top: 10px;
+    margin-top: 0px;
     justify-content: center;
     align-items: center;
-    font-size: 11px;
+    font-size: 10px;
     color: gray;
     font-weight: bold;
+    visibility: hidden;
 }
 
 
