@@ -48,7 +48,7 @@ a{
     color: #4183C4;
 }
 .socials{
-    margin-top: 50px;
+    margin-top: 30px;
     width: 300px;
     display: flex;
     align-items: center;
@@ -56,6 +56,16 @@ a{
 }
 .socials > a >img {
     height: 30px;
+}
+
+.secret-message{
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    cursor: default;
+    transition: color 0.01s;
+}
+.secret-message:hover{
+    color: rgb(47, 255, 54);
 }
 
 
