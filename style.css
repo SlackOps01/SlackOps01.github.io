@@ -1,78 +1,177 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body{
-    overflow: hidden;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    width: 100dvw;
-    height: 100dvh;
-    font-family: Arial;
-}
-main > img{
-    height: 150px;
-    margin-top: 40px;
-    margin-bottom: 35px;
-}
-
-.error404{
-    font-weight: bold;
-    font-size: 35px;
-    color: rgb(75, 75, 75);
-    margin-bottom: 10px;
-}
-
-span.title{
-    font-size: 16px;
-    font-weight: bold ;
-    margin-bottom: 20px;
-    color: gray;
     
+    margin: 0;
+    font-family: Inter;
 }
-span.sub-text{
-    width: 70%;
-    text-align: center;
-    color: gray;
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    height: 80px;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 1px rgba(0, 0, 0, .2);
 }
-span.sub-text>a{
+
+.left-half-header{
+    margin-left: 10vw;
+}
+.left-half-header > img{
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+}
+.right-half-header{
+    margin-right: 10vw;
+    display: flex;
+}
+.right-half-header >  ul{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 40vw;
+    /* background-color: blue; */
+    justify-content: space-between;
+    align-items: center;
+}
+.right-half-header > ul > li{
+    list-style: none;
+    display: flex;
+}
+.right-half-header > ul > li > a{
     text-decoration: none;
+    color: black;
 }
-.author{
-    color: gray;
-    margin-top: 0px;
+.right-half-header > ul > li > button{
+    background-color: #6A057F;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
 }
-a{
-    color: #4183C4;
-}
-.socials{
-    margin-top: 25px;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.socials > a >img {
-    height: 25px;
-}
-
-.secret-url{
-    color: gray;
-}
-.riddle{
-    width: 60%;
-    display: flex;
-    margin-top: 0px;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
-    color: gray;
+.right-half-header > ul > li > button >a{
+    text-decoration: none;
+    color: white;
     font-weight: bold;
-    visibility: hidden;
+}
+#intro{
+    margin-top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E6E8FF;
+}
+.intro-left-half{
+    margin-left: 10vw;
+}
+.intro-right-half{
+    margin-right: 10vw;
+}
+.intro-right-half > img{
+    width: 300px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .5);
+    border-radius: 50%;
+}
+.intro-left-half > h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.intro-left-half > h2{
+    margin-top: 0px;
+}
+.personal-description{
+    width: 50vw;
+}
+#about{
+    background-color: white;
+    height: 100vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 50px;
+}
+#about > h1{
+    font-size: 36px;
+}
+
+#about > h2{
+    color: #2F3E57;
+}
+
+.professional-summary{
+    font-size: 16px;
+    color: rgb(82, 82, 82);
+    margin-bottom: 30px;
+}
+
+.badges{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.tech-badge{
+    background-color: #E6E8FF;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #3B4664;
 }
 
 
 
+.cert-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 100px;
+}
 
+.cert-badge {
+  background-color: #e6e8ff;
+  color: #2a2a66;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  white-space: nowrap;
+}
+
+#projects{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: white;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.card{
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 30px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.card > h1{
+    font-size: 19px;
+}
+footer{
+    margin-top: 100px;
+    background-color: #2a2a66;
+    height: 25vw;
+}

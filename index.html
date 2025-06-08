@@ -2,24 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="http://127.0.0.1:8000/vue.global.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="olanrewaju sholarin, olanrewaju, sholarin, sholarin olanrewaju, blog, personal, personal blog, tech, technology, developer, cybersecurity, student">
-    <title>Coming soon...</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <main>
-        <img src="/help.png alt="">
-        <span class="error404">Boo you.</span>
-        <span class="title">Keep waiting...</span>
-        <span class="riddle">
-            My suit is wooden with a silk-lined bed, and though I'm dressed up, I'm surely dead. What am I?
-        </span>
-        <span class="author">- ThatYorubaDev -</span>
-        <div class="socials">
-            <b></b>
-        </div>
-    </main>
-    </html>
+    <div id="app">
+        <header>
+            <div class="left-half-header">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="right-half-header">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button><a href="">Get in Touch</a></button></li>
+                </ul>
+            </div>
+        </header>
+        <section id="intro">
+            <div class="intro-left-half">
+                <h1>Olanrewaju Sholarin</h1>
+                <h2>Cybersecurity Analyst, Backend Engineer, Game Developer</h2>
+                <p class="personal-description">I'm Olanrewaju Sholarin, a backend developer and cybersecurity enthusiast with a passion for building secure and efficient systems. I specialize in Python and FastAPI, and have worked on projects ranging from secure file transfer applications to real-time chat systems and command-and-control tools. As the President of NACOS in my school, I lead initiatives like hackathons and weekly coding sessions to foster a stronger tech community and help students grow in their technical journey. I'm driven by a desire to bridge the gap between software development and cybersecurity while empowering others through collaboration and learning.</p>
+            </div>
+            <div class="intro-right-half">
+                <img src="logo.png" alt="">
+            </div>
+        </section>
+        <section id="about">
+            <h1>About me</h1>
+            <h2>Professional Summary</h2>
+            <p class="professional-summary">
+            I am a dedicated cybersecurity enthusiast and developer specializing in building practical security solutions that turn complex security concepts into functional, effective code. With hands-on experience in developing tools such as command and control centers, secure file transfer applications, checksum verification utilities, and proof-of-concept ransomware, I bring a strong technical skill set to solving real-world security challenges.
+            </p>
+
+            <p class="professional-summary">As the President of the National Association of Computer Science Students (NACOS), Koladaisi Chapter, I lead initiatives to promote cybersecurity awareness and technical skill development among students. This leadership role has strengthened my abilities in project management, communication, and community building. I coordinate workshops, hackathons, and collaborative projects that empower aspiring cybersecurity professionals and foster a vibrant, engaged tech community.
+            </p>
+
+            <p class="professional-summary">Committed to continuous learning and growth, I focus on developing practical and impactful security solutions that address real-world problems. Whether building secure applications, automating security processes, or creating proof-of-concept exploits, I aim to contribute to stronger, more resilient digital environments. I am eager to collaborate with professionals and organizations that share a passion for advancing cybersecurity through innovation and hands-on work.
+
+            <h2>Technical Skills</h2>
+            <div class="badges">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">SQL</span>
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">Wireshark</span>
+                <span class="tech-badge">Linux</span>
+                <span class="tech-badge">Security+</span>
+                <span class="tech-badge">Splunk</span>
+                <span class="tech-badge">Git & GitHub</span>
+                <span class="tech-badge">Maltego</span>
+                <span class="tech-badge">Virtualization</span>
+                <span class="tech-badge">Automation</span>
+                <span class="tech-badge">Project Leadership</span>
+                <span class="tech-badge">Mentorship</span>
+                <span class="tech-badge">Scripting</span>
+                <span class="tech-badge">Bash</span>
+                <span class="tech-badge">Encrpytion Algorithms</span>
+            </div>
+            <h2 id="certifications">Certifications</h2>
+            <div class="cert-badges">
+                <div class="cert-badge">Google Cybersecurity Certificate</div>
+                <div class="cert-badge">CompTIA Security+(ongoing)</div>
+                <div class="cert-badge">NIMS ICS 100</div>
+                <div class="cert-badge">GitHub Foundations</div>
+                <div class="cert-badge">TCM Linux Fundamentals</div>
+            </div>
+        </section>
+        <section id="projects">
+            <h1>Featured Projects</h1>
+            <p>Here are some of my recent projects that showcase my expertise in Cybersecurity, Python</p>
+            <div class="card-container">
+                <div class="card">
+                <h1 class="card-title">PROJECT-CAESAR</h1>
+                <p class="card-desc">Python scripts for Caesar cipher encryption, decryption, and cryptanalysis using brute force.</p>
+                <a href="https://github.com/SlackOps01/PROJECT-CAESAR" target="_blank" class="card-link">View on GitHub</a>
+                </div>
+                <div class="card">
+                <h1 class="card-title">Secure File Transfer</h1>
+                <p class="card-desc">A secure app for encrypted file transfers between clients with authentication.</p>
+                <a href="https://github.com/SlackOps01/socket-file-transfer" target="_blank" class="card-link">View on GitHub</a>
+                </div>
+                <div class="card">
+                <h1 class="card-title">CHECKSUM Monitor</h1>
+                <p class="card-desc">A tool to verify file integrity by monitoring and comparing checksums automatically.</p>
+                <a href="https://github.com/SlackOps01/Checksum-Monitoring-app" target="_blank" class="card-link">View on GitHub</a>
+                </div>
+                <div class="card">
+                <h1 class="card-title">Audio Biometrics</h1>
+                <p class="card-desc">Biometric authentication system based on voice recognition and audio features.</p>
+                <a href="https://github.com/SlackOps01/audio-biometrics" target="_blank" class="card-link">View on GitHub</a>
+                </div>
+                <div class="card">
+                <h1 class="card-title">Satellite Tracking</h1>
+                <p class="card-desc">Real-time satellite location tracking and mapping using API data.</p>
+                <a href="https://github.com/SlackOps01/satellite-tracking" target="_blank" class="card-link">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+
+    </footer>
 </body>
+<script src="app.js"></script>
+</html>
