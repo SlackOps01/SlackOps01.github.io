@@ -2,141 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="http://127.0.0.1:8000/vue.global.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olanrewaju Sholarin</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div id="app">
-        <header>
-            <div class="left-half-header">
-                <img src="logo.png" alt="">
-            </div>
-            <div class="right-half-header">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><button><a href="">Get in Touch</a></button></li>
-                </ul>
-            </div>
-        </header>
-        <section id="intro">
-            <div class="intro-left-half">
-                <h1>Olanrewaju Sholarin</h1>
-                <h2>Cybersecurity Analyst, Backend Engineer, Game Developer</h2>
-                <p class="personal-description">I'm Olanrewaju Sholarin, a backend developer and cybersecurity enthusiast with a passion for building secure and efficient systems. I specialize in Python and FastAPI, and have worked on projects ranging from secure file transfer applications to real-time chat systems and command-and-control tools. As the President of NACOS in my school, I lead initiatives like hackathons and weekly coding sessions to foster a stronger tech community and help students grow in their technical journey. I'm driven by a desire to bridge the gap between software development and cybersecurity while empowering others through collaboration and learning.</p>
-            </div>
-            <div class="intro-right-half">
-                <img src="logo.png" alt="">
-            </div>
-        </section>
-        <section id="about">
-            <h1>About me</h1>
-            <h2>Professional Summary</h2>
-            <p class="professional-summary">
-            I am a dedicated cybersecurity enthusiast and developer specializing in building practical security solutions that turn complex security concepts into functional, effective code. With hands-on experience in developing tools such as command and control centers, secure file transfer applications, checksum verification utilities, and proof-of-concept ransomware, I bring a strong technical skill set to solving real-world security challenges.
-            </p>
+<body class="bg-[#27272A] flex justify-center flex flex-col items-center">
+    <section class="flex flex-col items-center text-center px-4 mt-20">
+  <img class="rounded-full h-[220px] w-[220px] object-cover shadow-[0_0_35px_#3b82f6]" src="me.jpg" alt="">
+  <h1 class="text-4xl font-extrabold mt-5 text-slate-100 font-mono">Olanrewaju Sholarin</h1>
+  <h3 class="text-lg font-extrabold mt-3 text-blue-300">Cybersecurity Analyst & Backend Engineer</h3>
+  <p class="text-gray-200 mt-6 max-w-2xl leading-loose text-[18px] pb-10 text-justify sm:text-center">
+    I'm Olanrewaju Sholarin, a backend developer and cybersecurity analyst passionate about building secure, reliable, and scalable systems. 
+    I specialize in Python, FastAPI, and modern security practices — developing APIs, real-time communication tools, and secure data applications.
+  </p>
+</section>
 
-            <p class="professional-summary">As the President of the National Association of Computer Science Students (NACOS), Koladaisi Chapter, I lead initiatives to promote cybersecurity awareness and technical skill development among students. This leadership role has strengthened my abilities in project management, communication, and community building. I coordinate workshops, hackathons, and collaborative projects that empower aspiring cybersecurity professionals and foster a vibrant, engaged tech community.
-            </p>
+    <!-- Contact Section -->
+<section id="contact" class="py-6 text-center">
+  <div class="flex justify-center gap-8 flex-wrap">
+    <a href="mailto:support@olanrewajusholarin.com" class="text-gray-300 hover:text-blue-400 border-b border-transparent hover:border-blue-400 transition">Email</a>
+    <a href="https://www.linkedin.com/in/olanrewaju-sholarin/" target="_blank" class="text-gray-300 hover:text-blue-400 border-b border-transparent hover:border-blue-400 transition">LinkedIn</a>
+    <a href="https://github.com/SlackOps01" target="_blank" class="text-gray-300 hover:text-blue-400 border-b border-transparent hover:border-blue-400 transition">GitHub</a>
+  </div>
+</section>
 
-            <p class="professional-summary">Committed to continuous learning and growth, I focus on developing practical and impactful security solutions that address real-world problems. Whether building secure applications, automating security processes, or creating proof-of-concept exploits, I aim to contribute to stronger, more resilient digital environments. I am eager to collaborate with professionals and organizations that share a passion for advancing cybersecurity through innovation and hands-on work.
 
-            <h2>Technical Skills</h2>
-            <div class="badges">
-                <span class="tech-badge">Python</span>
-                <span class="tech-badge">FastAPI</span>
-                <span class="tech-badge">SQL</span>
-                <span class="tech-badge">HTML</span>
-                <span class="tech-badge">CSS</span>
-                <span class="tech-badge">Wireshark</span>
-                <span class="tech-badge">Linux</span>
-                <span class="tech-badge">Security+</span>
-                <span class="tech-badge">Splunk</span>
-                <span class="tech-badge">Git & GitHub</span>
-                <span class="tech-badge">Maltego</span>
-                <span class="tech-badge">Virtualization</span>
-                <span class="tech-badge">Automation</span>
-                <span class="tech-badge">Project Leadership</span>
-                <span class="tech-badge">Mentorship</span>
-                <span class="tech-badge">Scripting</span>
-                <span class="tech-badge">Bash</span>
-                <span class="tech-badge">Encrpytion Algorithms</span>
-            </div>
-            <h2 id="certifications">Certifications</h2>
-            <div class="cert-badges">
-                <div class="cert-badge">Google Cybersecurity Certificate</div>
-                <div class="cert-badge">CompTIA Security+(ongoing)</div>
-                <div class="cert-badge">NIMS ICS 100</div>
-                <div class="cert-badge">GitHub Foundations</div>
-                <div class="cert-badge">TCM Linux Fundamentals</div>
-            </div>
-        </section>
-        <section id="projects">
-            <h1>Featured Projects</h1>
-            <p>Here are some of my recent projects that showcase my expertise in Cybersecurity, Python</p>
-            <div class="card-container">
-                <div class="card">
-                <h1 class="card-title">PROJECT-CAESAR</h1>
-                <p class="card-desc">Python scripts for Caesar cipher encryption, decryption, and cryptanalysis using brute force.</p>
-                <a href="https://github.com/SlackOps01/PROJECT-CAESAR" target="_blank" class="card-link">View on GitHub</a>
-                </div>
-                <div class="card">
-                <h1 class="card-title">Secure File Transfer</h1>
-                <p class="card-desc">A secure app for encrypted file transfers between clients with authentication.</p>
-                <a href="https://github.com/SlackOps01/socket-file-transfer" target="_blank" class="card-link">View on GitHub</a>
-                </div>
-                <div class="card">
-                <h1 class="card-title">CHECKSUM Monitor</h1>
-                <p class="card-desc">A tool to verify file integrity by monitoring and comparing checksums automatically.</p>
-                <a href="https://github.com/SlackOps01/Checksum-Monitoring-app" target="_blank" class="card-link">View on GitHub</a>
-                </div>
-                <div class="card">
-                <h1 class="card-title">Audio Biometrics</h1>
-                <p class="card-desc">Biometric authentication system based on voice recognition and audio features.</p>
-                <a href="https://github.com/SlackOps01/audio-biometrics" target="_blank" class="card-link">View on GitHub</a>
-                </div>
-                <div class="card">
-                <h1 class="card-title">Satellite Tracking</h1>
-                <p class="card-desc">Real-time satellite location tracking and mapping using API data.</p>
-                <a href="https://github.com/SlackOps01/satellite-tracking" target="_blank" class="card-link">View on GitHub</a>
-                </div>
-            </div>
-        </section>
+    <section id="certifications" class="py-16 text-center">
+  <h2 class="text-3xl font-bold text-blue-400 mb-8">Certifications</h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+    <div class="bg-[#323238] p-6 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition">
+      <h3 class="text-lg font-semibold text-white">CompTIA Security+</h3>
+      <p class="text-sm text-gray-400 mt-2"><a href="https://www.credly.com/badges/22ab7e6e-f612-4f87-a328-d8e5622a33c2/public_url">Verify here</a></p>
     </div>
-    <footer>
-        <div class="footer-container-one">
-            <div class="footer-left-half">
-                <img src="logo.png" alt="">
-                <p>Cybersecurity Student</p>
-            </div>
-            <div class="footer-right-half">
-                <div class="footer-nav">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="">Get in Touch</a></li>
-                </ul>
-                </div>
-                <div class="footer-links">
-                    <h3>Connect</h3>
-                    <ul>
-                        <img src="linkedin.png" alt="">
-                        <img src="mail.png" alt="">
-                        <img src="social.png" alt="">
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <p class="footer-trade-mark">© 2025 Olanrewaju Sholarin. All rights reserved.</p>
-    </footer>
+
+    <div class="bg-[#323238] p-6 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition">
+      <h3 class="text-lg font-semibold text-white">Google Cybersecurity Certificate</h3>
+      <p class="text-sm text-gray-400 mt-2">Issued by Coursera</p>
+    </div>
+
+    <div class="bg-[#323238] p-6 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition">
+      <h3 class="text-lg font-semibold text-white">TCM Security Linux 101</h3>
+      <p class="text-sm text-gray-400 mt-2">Issued by TCM Security</p>
+    </div>
+
+    <div class="bg-[#323238] p-6 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition">
+      <h3 class="text-lg font-semibold text-white">GitHub Foundations</h3>
+      <p class="text-sm text-gray-400 mt-2">Issued by GitHub</p>
+    </div>
+  </div>
+</section>
+<section id="projects" class="py-16 text-center">
+  <h2 class="text-3xl font-bold text-blue-400 mb-10">Projects</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+    <div class="bg-[#323238] p-6 rounded-2xl shadow-md hover:shadow-blue-500/30 hover:scale-105 transition">
+      <h3 class="text-xl font-semibold text-white">Secure File Transfer</h3>
+      <p class="text-gray-400 mt-2 text-sm">Encrypted file-sharing application built with Python, FastAPI, and AES encryption for secure data transmission.</p>
+      <a href="https://github.com/SlackOps01/socket-file-transfer" class="inline-block mt-4 text-blue-400 hover:text-blue-300 font-medium">View Project →</a>
+    </div>
+
+    <div class="bg-[#323238] p-6 rounded-2xl shadow-md hover:shadow-blue-500/30 hover:scale-105 transition">
+      <h3 class="text-xl font-semibold text-white">Remote Access Tool (RAT)</h3>
+      <p class="text-gray-400 mt-2 text-sm">Custom-built remote access framework featuring secure command execution and client monitoring over sockets.</p>
+      <a href="#" class="inline-block mt-4 text-blue-400 hover:text-blue-300 font-medium">View Project →</a>
+    </div>
+
+    <div class="bg-[#323238] p-6 rounded-2xl shadow-md hover:shadow-blue-500/30 hover:scale-105 transition">
+      <h3 class="text-xl font-semibold text-white">File Integrity Monitor</h3>
+      <p class="text-gray-400 mt-2 text-sm">Monitors and logs file changes across directories using cryptographic checksums and FastAPI-based dashboard.</p>
+      <a href="https://github.com/SlackOps01/Checksum-Monitoring-app" class="inline-block mt-4 text-blue-400 hover:text-blue-300 font-medium">View Project →</a>
+    </div>
+
+    <div class="bg-[#323238] p-6 rounded-2xl shadow-md hover:shadow-blue-500/30 hover:scale-105 transition">
+      <h3 class="text-xl font-semibold text-white">PROJECT CAESAR</h3>
+      <p class="text-gray-400 mt-2 text-sm">Uses Nlp and advanced algorithms to bruteforce caesar-encryption keys</p>
+      <a href="#" class="inline-block mt-4 text-blue-400 hover:text-blue-300 font-medium">View Project →</a>
+    </div>
+
+    <div class="bg-[#323238] p-6 rounded-2xl shadow-md hover:shadow-blue-500/30 hover:scale-105 transition">
+      <h3 class="text-xl font-semibold text-white">Voice Biometric System</h3>
+      <p class="text-gray-400 mt-2 text-sm">Machine learning-based voice authentication model built with Scikit-learn for a doll prototype project.</p>
+      <a href="https://github.com/SlackOps01/audio-biometrics" class="inline-block mt-4 text-blue-400 hover:text-blue-300 font-medium">View Project →</a>
+    </div>
+  </div>
+</section>
+
 </body>
-<script src="app.js"></script>
 </html>
